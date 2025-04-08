@@ -1,0 +1,155 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------                                                            	         
+											**LINKS**
+
+https://india.generation.org/programs/aws-restart/  #regester for course --- Regestered
+
+https://youtube.com/playlist?list=PL6XT0grm_TfgvfQH58GEoEZrTyVl0ABnH&si=6UtfvqeKm9W8ajtE  #shellscripting video
+
+https://linktr.ee/hiten.codes  #source of course
+
+https://learn.microsoft.com/en-in/training/career-paths/devops-engineer		#microsoft devops course
+
+https://docs.google.com/spreadsheets/d/1eE-NhZQFr545LkP4QNhTgXcZTtkMFeEPNyVXAflXia0/edit?usp=sharing	#Devops roadmap
+
+https://www.linkedin.com/posts/lokeshkumar-aws-devops_we-hit-2000-subscribers-thank-you-devops-activity-7262135002493050880-8IJQ?utm_source=share&utm_medium=member_android #all cloud tools
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                 Part 3 Intermediate Level AWS interview questions :
+
+31. How do you secure data at rest and in transit in AWS?
+Ans:- At rest: Use AWS Key Management Service (KMS) for encryption of stored data, services like S3, EBS, and RDS provide server-side encryption options.
+In transit: Use SSL/TLS protocols to secure data transfer. Services like S3, CloudFront, and API Gateway support encryption in transit.
+
+32. Explain the difference between AWS S3 Standard and S3 Glacier.
+Ans: S3 Standard is designed for frequently accessed data, offering low latency and high availability. It is more expensive but optimized for real-time access.
+S3 Glacier: Designed for long-term archiving and infrequently accessed data. It is cheaper, but retrieval times can range from minutes to hours.
+
+33. How does AWS S3 versioning work?
+Ans:- S3 versioning allows you to store multiple versions of an object within a bucket. When enabled, S3 retains older versions of objects, helping to recover from accidental overwrites, deletions, or corruptions.
+
+34. What is AWS ElastiCache?
+Ans:- AWS ElastiCache is a fully managed in-memory caching service that supports Redis and Memcached. It helps improve the performance of web applications by retrieving data from fast, managed in-memory caches instead of relying entirely on slower disk-based databases.
+
+35. Explain the concept of a bastion host.
+Ans:- A bastion host is a server used to securely connect to instances in a private subnet of your VPC. It acts as a gateway, allowing you to securely SSH or RDP into your instances, while reducing the attack surface.
+
+36. How do you implement high availability in AWS?
+Ans:- Use services like EC2 Auto Scaling, Elastic Load Balancers (ELB), and deploying across multiple Availability Zones (AZs). For databases, you can use RDS Multi-AZ deployments or Aurora Global Database.
+
+37. What is AWS Direct Connect?
+Ans:- AWS Direct Connect is a dedicated network connection from your on-premise environment to AWS, allowing for secure, private, and high-bandwidth connectivity with lower latency compared to internet-based connections.
+
+38. What are AWS Managed Services?
+Ans:- AWS Managed Services (AMS) provides operational management for AWS infrastructure, handling tasks such as patch management, monitoring, backups, and security. It helps automate common activities and enforce security best practices.
+
+39. What is AWS Config?
+Ans:- AWS Config is a service that tracks and records configurations of your AWS resources over time. It helps you assess compliance, identify configuration changes, and troubleshoot resource configuration issues.
+
+40. How do you set up cross-region replication in S3?
+Ans:- Cross-region replication (CRR) in S3 allows automatic replication of objects from one S3 bucket to another in a different AWS region. You can enable it in the bucket settings, selecting a destination bucket and configuring any IAM roles and permissions.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                ***Common interview Question For Cloud & DevOps***
+
+1. What scripting languages are you familiar with?
+
+2. What are artifacts in GitLab CI?
+
+3. What is a private module registry in Terraform?
+
+4. If you delete the local Terraform state file and it's not stored in S3 or DynamoDB, how can you recover it?
+
+5. How do you import resources into Terraform?
+
+6. What is a dynamic block in Terraform?
+
+7. How can you create EC2 instances in two different AWS accounts simultaneously using Terraform?
+
+8. How do you handle an error stating that the resource already exists when creating resources with Terraform?
+
+9. How does Terraform refresh work?
+
+10. How would you upgrade Terraform plugins?
+
+11. What are the different types of Kubernetes volumes?
+
+12. If a pod is in a crash loop, what might be the reasons, and how can you recover it?
+
+13. What is the difference between StatefulSet and DaemonSet?
+
+14. What is a sidecar container in Kubernetes, and what are its use cases?
+
+15. If pods fail to start during a rolling update, what strategy would you use to identify the issue and rollback?
+
+16. How can we enable communication between 500 AWS accounts internally?
+
+17. How to configure a solution where a Lambda function triggers on an S3 upload and updates DynamoDB?
+
+18. What is the standard port for RDP?
+
+19. How do you configure a Windows EC2 instance to join an Active Directory domain?
+
+20. How can you copy files from a Linux server to an S3 bucket?
+
+21. What permissions do you need to grant for that S3 bucket?
+
+22. What are the different types of VPC endpoints and when do you use them?
+
+23. How to resolve an image pullback error when using an Alpine image pushed to ECR in a pipeline?
+
+24. What is the maximum size of an S3 object?
+
+25. What encryption options do we have in S3?
+
+26. Can you explain IAM user, IAM role, and IAM group in AWS?
+
+27. What is the difference between an IAM role and an IAM policy document?
+
+28. What are inline policies and managed policies?
+
+29. How can we add a load balancer to Route 53?
+
+30. What are A records and CNAME records?
+
+31. What is the use of a target group in a load balancer?
+
+32. If a target group is unhealthy, what might be the reasons? 33. Can you share your screen and write a Jenkins pipeline?
+
+34. How do you write parallel jobs in a Jenkins pipeline?
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Hey Everyone,
+I had an interview with an MNC today, which went on for about 40 minutes. The discussion primarily revolved around AWS and DevOps topics.
+
+🔹 AWS Networking & Security
+ 1️⃣ What is a VPC (Virtual Private Cloud), and why is it important?
+ 2️⃣ What is the difference between Public and Private Subnets?
+ 3️⃣ What is a NAT Gateway, where should it be configured (public/private subnet), and how do you verify if a subnet has internet access?
+ 4️⃣ What is Route 53 (R53), and how does it help in DNS management?
+ 5️⃣ What are the different AWS Routing Policies, and when should you use each?
+ 6️⃣ NACL vs. Security Groups – What are the key differences?
+ 7️⃣ What is the difference between Stateless vs. Stateful security in AWS?
+ 8️⃣ If a Security Group only allows outbound traffic, what happens to inbound requests?
+ 9️⃣ If a Network ACL (NACL) allows both inbound and outbound traffic, why does it still require explicit rules?
+🔹 AWS Services & Infrastructure Management
+ 🔟 What is an Origin in AWS, and how does it relate to a CDN?
+ 1️⃣1️⃣ What is a CDN (Content Delivery Network), and how does it improve performance?
+ 1️⃣2️⃣ Where are NAT Gateway & Internet Gateway (IGW) located, and what are their specific use cases?
+ 1️⃣3️⃣ What are AWS Lambda Layers, and how do they improve function management?
+🔹 Terraform & Infrastructure as Code (IaC)
+ 1️⃣4️⃣ What is Terraform, and why is managing dependencies important?
+ 1️⃣5️⃣ Explain the Terraform Workflow step by step.
+ 1️⃣6️⃣ What is a Terraform State File, and why is it essential?
+ 1️⃣7️⃣ If a Terraform State File is deleted, how can you recover it?
+ 1️⃣8️⃣ What is Terraform Import, and why do we use it?
+ 1️⃣9️⃣ What is a Remote Backend in Terraform, and what are its advantages?
+🔹 DevOps & CI/CD
+2️⃣0️⃣ What is the difference between Git, GitHub, and GitLab?
+ 2️⃣1️⃣ What CI/CD Pipelines do you use in your projects?
+ 2️⃣2️⃣ What factors affect the execution time of your CI/CD pipeline?
+ 2️⃣3️⃣ Explain the Jenkins Workflow and its key stages.
+
+
